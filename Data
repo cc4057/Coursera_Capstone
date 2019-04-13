@@ -1,0 +1,23 @@
+Introduction/Business Plan (Draft)
+
+The homogeneity of the neighborhoods in a city represents an important variable to consider for new businesses, either as an indicator
+for the potential of a new business to penetrate a stagnating market or a signal that a particular type of business is particularly 
+competitive in a given region. While the exact implications of a more or less homogenous market require careful analysis and study to 
+gain more reliable insights, initial determinations of neighborhood business composition and the existence/nature of clusters of 
+'similar' neighborhoods provide valuable initial looks into  markets. 
+
+This project will therefore study Atlanta, an established but continuously developing metropolitan area, and examine the clusters of 
+neighborhoods present in the city to determine overall homogeneity (higher percentages of neighborhoods in a smaller amount of clusters
+would indicate a highly homogenous city, vice versa for the opposite), and offer comparisons between Atlanta and two other cities: 
+New York and Toronto. If the data allows, further analysis will be performed to determine most common venue categories within each cluster
+to offer suggestions as to categories that are highly successful/competitive.
+
+Data (Draft)
+
+This project will make use of: 
+*Neighborhood lists from Wikipedia to determine existence/name of neighborhoods in Atlanta
+*Location data from geopy to determine neighborhood location
+*Venue information by neighborhood from Foursquare, to be used to determine clusters of neighborhoods for Atlanta. API calls to Foursquare
+will use Lat/Long Data from geopy, with a limit of 30 venues per neighborhood (to increase data detail). Neighborhoods will then be 
+clustered according to venue composition similarity and compared. A consistent number of clusters will be used across the 3 cities studied
+for comparison reasons. 
