@@ -10,14 +10,23 @@ This project will therefore study Atlanta, an established but continuously devel
 neighborhoods present in the city to determine overall homogeneity (higher percentages of neighborhoods in a smaller amount of clusters
 would indicate a highly homogenous city, vice versa for the opposite), and offer comparisons between Atlanta and two other cities: 
 New York and Toronto. If the data allows, further analysis will be performed to determine most common venue categories within each cluster
-to offer suggestions as to categories that are highly successful/competitive.
+to offer suggestions as to categories that are highly successful/competitive. 
+
+Results would be highly useful to entreprenuers seeking markets receptive/ideal for their particular type/model of business, as well as 
+financial institutions aiming to evaluate business proposals/likelihood of success within Atlanta. A similar methodology could be 
+reproduced in other markets/cities as appropriate.
 
 Data (Draft)
 
 This project will make use of: 
 *Neighborhood lists from Wikipedia to determine existence/name of neighborhoods in Atlanta
+  Will extract: neighborhood name, borough name for identification purposes during clustering
 *Location data from geopy to determine neighborhood location
+  Will extract: latitude, longitude information for each 
 *Venue information by neighborhood from Foursquare, to be used to determine clusters of neighborhoods for Atlanta. API calls to Foursquare
 will use Lat/Long Data from geopy, with a limit of 30 venues per neighborhood (to increase data detail). Neighborhoods will then be 
 clustered according to venue composition similarity and compared. A consistent number of clusters will be used across the 3 cities studied
 for comparison reasons. 
+  Will extract: top 30 venues for each neighborhood, venue categories for each venue. 
+
+
